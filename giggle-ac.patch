@@ -1,0 +1,18 @@
+diff -aurN giggle-0.4.97.orig/configure.ac giggle-0.4.97/configure.ac
+--- giggle-0.4.97.orig/configure.ac	2010-03-10 19:42:49.000000000 +0100
++++ giggle-0.4.97/configure.ac	2010-03-10 19:43:55.000000000 +0100
+@@ -157,14 +157,6 @@
+             [AS_HELP_STRING([--with-git-command=PATH], [path to git command])])
+ GIT_COMMAND=$with_git_command
+ 
+-if test x"$GIT_COMMAND" = x; then
+-  AC_PATH_PROG(GIT_COMMAND, git, [no])
+-else
+-  if ! test -x "$GIT_COMMAND"; then
+-    GIT_COMMAND=no
+-  fi
+-fi
+-
+ if test "$GIT_COMMAND" = no; then
+   AC_MSG_ERROR([git command not found in path])
+ else
