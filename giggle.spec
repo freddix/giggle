@@ -1,7 +1,7 @@
 Summary:	Graphical frontend for git
 Name:		giggle
 Version:	0.6.2
-Release:	2
+Release:	3
 License:	GPL v2
 Group:		X11/Development/Tools
 Source0:	http://download.gnome.org/sources/giggle/0.6/%{name}-%{version}.tar.xz
